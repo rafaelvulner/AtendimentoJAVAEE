@@ -1,0 +1,59 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24/05/2016, 09:55:47
+    Author     : DTI05
+*/
+
+.corpo{
+    max-width: 720px;
+    
+    margin: auto;
+}
+
+.sejabemvindo{
+    font-size: 12pt;
+    padding-top: 10px;
+    color: #ffffff;
+    background-color: #000066;
+}
+
+
+
+.senha{
+    background-color: #000066;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    font-size: 40pt;
+    font-weight: bold;
+   
+    
+}
+
+.guiche{
+    background-color: #000066;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    font-size: 40pt;
+    font-weight: bold;
+}
+
+.historico{
+    background-color: #000066;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.hora{
+   
+    color: #ffffff;
+    font-size: 20pt;
+}
+
