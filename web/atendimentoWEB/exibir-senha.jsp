@@ -10,7 +10,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>   
         <link href="css/painel.css" rel="stylesheet" type="text/css"/>
-        <script src="js/bootstrap.js" type="text/javascript"></script>
+        
         <script src="js/jquery.js" type="text/javascript"></script>
         <script src="js/horaData.js" type="text/javascript"></script>
         <title>Painel de senha</title>

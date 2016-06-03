@@ -46,7 +46,7 @@ public class ClienteDAO {
             ps.execute();
         } catch (SQLException e) {
 
-            System.out.println("Erro ao inserir no banco");
+            System.out.println("Erro ao inserir no banco"+e);
         }
 
     }

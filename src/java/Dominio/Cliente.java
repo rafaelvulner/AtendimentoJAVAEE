@@ -19,6 +19,7 @@ public class Cliente {
     private String cpf;
     private String telefone;
     private String data;
+    private String foto;
 
     public String getNome() {
         return nome;
@@ -90,6 +91,14 @@ public class Cliente {
 
     public void setId(int Id) {
         this.Id = Id;
+    }
+
+    public String getFoto() {
+        return foto;
+    }
+
+    public void setFoto(String foto) {
+        this.foto = foto;
     }
     
 }

@@ -50,6 +50,7 @@ public class CadastroController extends HttpServlet {
             String cpf = request.getParameter("cpf");
             String telefone = request.getParameter("telefone");
             String data = request.getParameter("data");
+            
             Cliente cli = new Cliente();
             ClienteDAO inserir = new ClienteDAO();
             
@@ -69,6 +70,7 @@ public class CadastroController extends HttpServlet {
             cli.setCpf(cpf);
             cli.setTelefone(telefone);
             cli.setData(data);
+            
             
             //Faz a inserção do cadastro no banco de dados
             inserir.inserirCadastro(cli);
