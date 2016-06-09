@@ -90,7 +90,7 @@
                 <label for="telefone"><p class="corLetras">Telefone</p></label>
                 <input class="form-control" type="text" name="telefone" id="telefone">
                 </div>
-                <input type="button" class="btn btn-primary" id="submit" value="Cadastrar">
+                <input type="button" class="btn btn-default" id="submit" value="Cadastrar">
                 
         </div>
         

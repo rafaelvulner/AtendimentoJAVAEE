@@ -10,7 +10,19 @@
 .resultado{
     margin-left: 400px
 }
+.intro{
+    background-color: #005580;
+    height: 100px;
+    margin: 10px
+    
+    
+}
 
+.imagem{
+    width: 100px;
+    height: 100px;
+    margin: auto !important;
+}
 #aviso{
      margin: 10px;
     
@@ -36,6 +48,10 @@
 
 }
 
+.index{
+    margin: 10px auto !important;
+    float: none !important;
+}
 .quadro {
 
     margin: 20px auto !important;
@@ -49,7 +65,7 @@
     background-color: #ffffff;
     margin: 10px auto !important;
     float: none !important;
-    background-color: #0072C6;
+    background-color: #A59A9A;
 
 }
 
@@ -123,7 +139,7 @@
     border: 1px solid black;
     margin: 10px auto !important;
     float: none !important;
-    background-color: #005580;
+    background-color: #A59A9A;
 }
 
 .campoCadastro {
