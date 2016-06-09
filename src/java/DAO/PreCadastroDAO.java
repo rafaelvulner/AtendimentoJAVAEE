@@ -18,7 +18,7 @@ public class PreCadastroDAO {
     Conexao conn = new Conexao();
 
     public void inserir(PreCadastro cliente) throws Exception {
-        String sql = "insert into precadastro(nome, senha, horas) values(?,?,?)";
+        String sql = "insert into precadastro(nome, senha, horas, data) values(?,?,?,?)";
 
         try {
             PreparedStatement ps = conn.getConexao().prepareStatement(sql);
@@ -26,6 +26,7 @@ public class PreCadastroDAO {
             ps.setString(1, cliente.getNome());
             ps.setInt(2, cliente.getSenha());
             ps.setString(3, cliente.getHora());
+            ps.setString(4, cliente.getData());
             ps.execute();
         } catch (SQLException e) {
             System.out.println("Erro");
@@ -36,7 +37,7 @@ public class PreCadastroDAO {
     public List<PreCadastro> consultaNormal() throws SQLException {
 
         List<PreCadastro> cli = new ArrayList();
-        String Sql = "select * from precadastro where senha=0 Order by Id Desc Limit 3";
+        String Sql = "select * from precadastro where senha=0 order by data and horas desc";
 
         PreparedStatement ps = conn.getConexao().prepareStatement(Sql);
 
@@ -47,6 +48,7 @@ public class PreCadastroDAO {
             
             clientes.setNome(rs.getString("nome"));
             clientes.setHora(rs.getString("horas"));
+            clientes.setData(rs.getString("data"));
             cli.add(clientes);
 
         }
@@ -57,7 +59,7 @@ public class PreCadastroDAO {
     
     public List<PreCadastro> consultaPreferencial() throws SQLException{
     List<PreCadastro> cli = new ArrayList();
-        String Sql = "select * from precadastro where senha=1 Order by Id Desc Limit 3";
+        String Sql = "select * from precadastro where senha=1 order by data and horas desc";
 
         PreparedStatement ps = conn.getConexao().prepareStatement(Sql);
 
@@ -68,6 +70,7 @@ public class PreCadastroDAO {
 
             clientes.setNome(rs.getString("nome"));
             clientes.setHora(rs.getString("horas"));
+            clientes.setData(rs.getString("data"));
             cli.add(clientes);
 
         }
@@ -90,7 +93,7 @@ public class PreCadastroDAO {
             pre.setNome(rs.getString("nome"));
             pre.setSenha(rs.getInt("senha"));
             pre.setHora(rs.getString("horas"));
-            pre.setNumero(rs.getInt("numero"));
+            
             
             lista.add(pre);
         }

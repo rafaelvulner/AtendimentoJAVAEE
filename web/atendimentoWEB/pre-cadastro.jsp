@@ -9,11 +9,10 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <script src="js/jquery.js" type="text/javascript"></script>
-        <script src="js/metro.js" type="text/javascript"></script>
-        <link href="css/metro.css" rel="stylesheet" type="text/css"/>
-        <link href="css/metro-schemes.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <script src="js/jquery.js" type="text/javascript"></script>
+        <script src="js/bootstrap.js" type="text/javascript"></script>
         <title>Triagem</title>
     </head>
     <script>
@@ -38,11 +37,15 @@
         <%@include file="menu-2.html" %>
         <div class="grid corpo">
            
-                <div class="quadro preCad">
+                <div class="preCad">
 
-                    <label for="name"></label>
-                        <p class="corLetras">Nome</p><br>
-                        <input type="text" class="input-control" name="nome"id="name">
+                   
+                    <div class="form-group">
+                    <input type="text" class="form-control" name="nome"id="name">
+                    </div>
+                    <button id="submit" class="btn btn-default">Gerar senha</button>
+                    
+                        
                     
 
                     <label class="corLetras">
@@ -52,8 +55,8 @@
                     <label class="questoes corLetras">
                         <input type="radio" name="senha" class="toolbar-group-radio" value="1">Preferencial
                     </label>
-
-                    <button id="submit" class="button">Gerar senha</button>
+                      
+                    
                     
                 </div>
             <div id="resultado" class="resultado"><h1></h1></div>

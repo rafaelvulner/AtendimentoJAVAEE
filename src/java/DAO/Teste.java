@@ -22,19 +22,22 @@ import java.util.List;
 public class Teste {
     public static void main(String[] args) throws Exception {
         
-        SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
-        Date hora = Calendar.getInstance().getTime();
-        String horaCerta = sdf.format(hora);
-        PreCadastroDAO dao = new PreCadastroDAO();
-        Gson gson = new Gson();
-        List<PreCadastro> preLista = new ArrayList();
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+        Date hora = new Date();
+        String data = sdf.format(hora);
+        System.out.println(data);
         
-        for (PreCadastro pre : dao.consultaNormal()) {
-            preLista.add(pre);
-        }
         
-        String teste = gson.toJson(preLista);
-        System.out.println(teste);
+//        PreCadastroDAO dao = new PreCadastroDAO();
+//        Gson gson = new Gson();
+//        List<PreCadastro> preLista = new ArrayList();
+//        
+//        for (PreCadastro pre : dao.consultaGeral()) {
+//            preLista.add(pre);
+//        }
+//        
+//        String teste = gson.toJson(preLista);
+//        System.out.println(teste);
         
     }
 }

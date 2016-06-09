@@ -47,7 +47,9 @@ public class GerarSenhaController extends HttpServlet {
         
         //Instancia do horario para inserir no banco
         SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
+        SimpleDateFormat data = new SimpleDateFormat("dd/MM/yyyy");
         Date hora = Calendar.getInstance().getTime();
+        Date date = Calendar.getInstance().getTime();
         
        
         
@@ -55,6 +57,7 @@ public class GerarSenhaController extends HttpServlet {
         String nome = request.getParameter("user");
         String senha = request.getParameter("senha");
         String horaCerta = sdf.format(hora);
+        String dataCerta = data.format(date);
         int numero=1;
         
         //Faz instancia do dominio pre cadastro
@@ -75,6 +78,7 @@ public class GerarSenhaController extends HttpServlet {
             precadastro.setNome(nome);
             precadastro.setSenha(number);
             precadastro.setHora(horaCerta);
+            precadastro.setData(dataCerta);
             dao.inserir(precadastro);
             response.getWriter().write("<h1>Cadastro efetuado com sucesso</h1>");
             

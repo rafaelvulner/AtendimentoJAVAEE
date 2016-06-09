@@ -20,9 +20,9 @@
             });
         </script>
         <script>
-            $(document).ready(function Att() {
+            $(document).ready(function senha() {
 
-
+                
                 $.ajax({
                     url: '../SenhaController',
                     data: 'json',
@@ -36,11 +36,14 @@
                             } else {
                                 $('#tabela > tbody').append('<tr><td>' + obj.nome + '</td><td>Preferencial</td><td>' + obj.hora + '</td></tr>');
                             }
+                            
                         });
-                        setTimeout(Att, 2000);
+                        
                     }
                 });
+                 setTimeout(senha,2000);
             });
+       
         </script>
     </head>
     <body>

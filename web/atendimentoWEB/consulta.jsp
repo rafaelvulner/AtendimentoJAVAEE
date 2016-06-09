@@ -10,10 +10,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <link href="css/style.css" rel="stylesheet" media="screen">
-        <link href="css/metro.css" rel="stylesheet" media="screen">
-        <link href="css/metro-schemes.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
         <script src="js/jquery.js"></script>
-        <script src="js/metro.js"></script>
+        <script src="js/bootstrap.js" type="text/javascript"></script>
         <script>
             $(document).ready(function () {
                 $('#submit').click(function (event) {
@@ -33,19 +32,26 @@
     </head>
     <body>
         <%@include file="menu-2.html"%>
-        <div class="corpo">
-            <div class="busca">
-                <input type="button" value="Buscar" name="verificar" id="submit">
-                <input type="text" class="input-control" name="user" id="user" size="60">
-            </div>
+        <div class="container">
+            <div class="col-md-6 busca">
+               
+                <div class="col-md-2">
+                    <input type="button" class="btn btn-primary" value="Buscar" name="verificar" id="submit">
+                </div>
 
-            <div class="quadro">
-                <table class="table striped hovered border bordered" id="tabela">
-                    <tbody id="resultado">
-                    </tbody>
-                </table>
+                <div class="form-group col-md-8">
+                    <input type="text" class="form-control" name="user" id="user">
+                </div>
+
+
+                <div class="quadro">
+                    <table class="table table-striped" id="tabela">
+                        <tbody id="resultado">
+                        </tbody>
+                    </table>
+                </div>
+                <div id="aviso"></div>
             </div>
-            <div id="aviso"></div>
         </div>
     </body>
 </html>

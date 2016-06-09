@@ -38,11 +38,7 @@
 
 .quadro {
 
-    width: 400px;
-    padding: 10px;
-    background-color: #ffffff;
-    margin-left: 320px;
-    float: none !important;
+    margin: 20px auto !important;
 
 }
 
@@ -58,7 +54,7 @@
 }
 
 .exibirSenha{
-    border: 2px solid black;
+    
     max-width: 350px;
     padding: 10px;
     background-color: #ffffff;
@@ -81,6 +77,13 @@
     float: none !important;
 
 
+}
+
+.aviso{
+    float: none !important;
+    margin: auto;
+    
+        
 }
 
 .quadroPreferencial {
@@ -160,9 +163,9 @@ input:focus{
 }
 
 .busca{
-    max-width: 720px;
+    margin: 10px auto !important;
     float: none !important;
-    margin: 0 auto !important;
+    
 }
 
 .mensagem{

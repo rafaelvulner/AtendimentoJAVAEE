@@ -13,7 +13,7 @@ public class PreCadastro {
      private String nome;
      private int senha;
      private String hora;
-     private int numero;
+     private String data;
 
     public String getNome() {
         return nome;
@@ -41,13 +41,17 @@ public class PreCadastro {
         this.hora = hora;
     }
 
-    public int getNumero() {
-        return numero;
+    public String getData() {
+        return data;
     }
 
-    public void setNumero(int numero) {
-        this.numero = numero;
+    public void setData(String data) {
+        this.data = data;
     }
+
+   
+
+    
     
     
     

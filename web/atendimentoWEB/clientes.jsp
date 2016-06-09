@@ -13,13 +13,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/style.css" rel="stylesheet" media="screen">
-        <link href="css/metro.css" rel="stylesheet" media="screen">       
-        <link href="css/metro-schemes.min.css" rel="stylesheet" type="text/css"/>
-        <link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
-
-        <script src="js/jquery-ui.min.js" type="text/javascript"></script>
-        <script src="js/metro.js"></script>
-        <script src="js/jquery.confirm.js"></script>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.js" type="text/javascript"></script>
         <script>
@@ -70,17 +64,17 @@
     <body>
         <%@include file="menu-2.html" %>
         <div class="corpo">
-            <table class="table striped hovered border bordered ">
+            <table class="table table-bordered table-responsive">
                 <thead>
                     <tr>
-                        <td>Nome</td>
-                        <td>Rua</td>
-                        <td>Bairro</td>
-                        <td>Cidade</td>
-                        <td>Rg</td>
-                        <td>CPF</td>
-                        <td>Telefone</td>
-                        <td>Data de cadastro</td>
+                        <th>Nome</th>
+                        <th>Rua</th>
+                        <th>Bairro</th>
+                        <th>Cidade</th>
+                        <th>Rg</th>
+                        <th>CPF</th>
+                        <th>Telefone</th>
+                        <th>Data de cadastro</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -90,10 +84,10 @@
                 </tbody>
 
             </table>
-            <a href="consulta.jsp"><input type="button" value="Voltar" class="button"></a>
-            <a href="alterar.jsp?Id=${param.Id}"><input type="button" value="Alterar dados"></a>
+            <a href="consulta.jsp"><input type="button" value="Voltar" class="btn btn-primary"></a>
+            <a href="alterar.jsp?Id=${param.Id}"><input type="button" value="Alterar dados" class="btn btn-primary"></a>
             
-            <input type="button" value="Excluir" id="delet"></input>
+            <input type="button" value="Excluir" id="delet" class="btn btn-danger"></input>
             <div id="resultado"></div>
         </div>
         

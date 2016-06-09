@@ -10,7 +10,9 @@ import Dominio.Cliente;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.SQLException;
+import java.text.SimpleDateFormat;
 import static java.time.Clock.system;
+import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.servlet.ServletException;
@@ -39,6 +41,11 @@ public class CadastroController extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException, SQLException {
         response.setContentType("text/html;charset=UTF-8");
+        
+        //Instancia a hora e data atual
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+        Date hora = new Date();
+        String data = sdf.format(hora);
        
         try{
             //Tenta buscar todas informações do formulário
@@ -49,14 +56,13 @@ public class CadastroController extends HttpServlet {
             String rg = request.getParameter("rg");
             String cpf = request.getParameter("cpf");
             String telefone = request.getParameter("telefone");
-            String data = request.getParameter("data");
+            
             
             Cliente cli = new Cliente();
             ClienteDAO inserir = new ClienteDAO();
             
             //Validação de campo do lado servidor
-            if (nome.isEmpty() || rua.isEmpty() || bairro.isEmpty() || cidade.isEmpty() || rg.isEmpty() || cpf.isEmpty()
-                    || telefone.isEmpty()) {
+            if (nome.isEmpty() || rua.isEmpty() || bairro.isEmpty() || cidade.isEmpty() || rg.isEmpty() || cpf.isEmpty() || telefone.isEmpty()) {
                 response.getWriter().write("Existem campos vazios favor preencher!");
                 return;
             }
@@ -83,7 +89,7 @@ public class CadastroController extends HttpServlet {
         try (PrintWriter out = response.getWriter()) {
              
             //Se der tudo certo ele leva uma mensagem de cadastro com sucesso
-            out.println("<h1>Cadastrado com sucesso</h1>");
+            out.println("Cadastrado com sucesso");
            
             
         }
