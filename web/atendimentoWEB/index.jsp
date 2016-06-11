@@ -13,39 +13,41 @@
         <%@include file="menu-2.html" %>
 
 
-        <div class="container">
-            <div class="row index">
-                
-                <div class="col-md-3 intro img-rounded ">
-                    <a href=cadastro.jsp><img src="img/cadastro.png" class="img-responsive imagem"></a>
+        <div class="container col-md-12">
+
+            <div class="row text-center">
+                <h3>Menu rápido</h3>
+
+                <div class="col-sm-4 col-sm-offset-2 img-rounded indexCirculo">
+                    <a href="cadastro.jsp" class=""><img src="img/cadastro.png" class="img-responsive imgIndex img-rounded indexImagen" alt="Image"></a>
+
+
+                    <p>Cadastrar usuario</p>
+                </div>
+                <div class="col-sm-4 img-rounded indexCirculo">
+                    <a href="consulta.jsp"><img src="img/consulta.png" class="img-responsive img-rounded indexImagen imgIndex" alt="Image"></a>
+
+                    <p>Acessar cadastro</p>
                 </div>
                 
-                <div class="col-md-3 intro img-rounded ">
-                    <a href="consulta.jsp"><img src="img/consulta.png" class="img-responsive imagem"></a>
+                <div class="col-sm-4 col-sm-offset-2 img-rounded indexCirculo">
+                    <a href="cadastro.jsp" ><img src="img/cadastro.png" class="img-responsive imgIndex img-rounded indexImagen" alt="Image"></a>
+
+
+                    <p>Cadastrar usuario</p>
+                </div>
+                <div class="col-sm-4 img-rounded indexCirculo">
+                    <a href="consulta.jsp"><img src="img/consulta.png" class="img-responsive img-rounded indexImagen imgIndex" alt="Image"></a>
+
+                    <p>Acessar cadastro</p>
                 </div>
                 
-                <div class="col-md-3 intro img-rounded ">
-                    <a href="exibir-senha.jsp" target="_blank"><img src="img/senha.png" class="img-responsive imagem"></a>
-                </div>
                 
+               
+                
+                
+
             </div>
-            
-            <div class="row index">
-                
-                <div class="col-md-3 intro img-rounded ">
-                    olá
-                </div>
-                
-                <div class="col-md-3 intro img-rounded ">
-                    olá
-                </div>
-                
-                <div class="col-md-3 intro img-rounded ">
-                    olá
-                </div>
-                
-            </div>
-        </div>
     </body>
 
 </html>
