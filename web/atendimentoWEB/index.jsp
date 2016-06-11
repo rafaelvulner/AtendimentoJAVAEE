@@ -18,36 +18,34 @@
             <div class="row text-center">
                 <h3>Menu rápido</h3>
 
-                <div class="col-sm-4 col-sm-offset-2 img-rounded indexCirculo">
+                <div class="col-sm-3 indexCirculo">
                     <a href="cadastro.jsp" class=""><img src="img/cadastro.png" class="img-responsive imgIndex img-rounded indexImagen" alt="Image"></a>
-
-
                     <p>Cadastrar usuario</p>
                 </div>
-                <div class="col-sm-4 img-rounded indexCirculo">
+                
+                <div class="col-sm-3 indexCirculo">
                     <a href="consulta.jsp"><img src="img/consulta.png" class="img-responsive img-rounded indexImagen imgIndex" alt="Image"></a>
-
                     <p>Acessar cadastro</p>
                 </div>
-                
-                <div class="col-sm-4 col-sm-offset-2 img-rounded indexCirculo">
-                    <a href="cadastro.jsp" ><img src="img/cadastro.png" class="img-responsive imgIndex img-rounded indexImagen" alt="Image"></a>
 
-
-                    <p>Cadastrar usuario</p>
-                </div>
-                <div class="col-sm-4 img-rounded indexCirculo">
-                    <a href="consulta.jsp"><img src="img/consulta.png" class="img-responsive img-rounded indexImagen imgIndex" alt="Image"></a>
-
-                    <p>Acessar cadastro</p>
+                           
+                <div class="col-sm-3 indexCirculo">
+                    <a href="pre-cadastro.jsp"><img src="img/gerarsenha.png" class="img-responsive img-rounded indexImagen imgIndex" alt="Image"></a>
+                    <p>Gerar senha</p>
                 </div>
                 
-                
-               
-                
-                
+                <div class="col-sm-3 indexCirculo">
+                    <a href="exibir-senha.jsp" target="_blank"><img src="img/painel.png" class="img-responsive img-rounded indexImagen imgIndex" alt="Image"></a>
+                    <p>Acessar painel de senhas</p>
+                </div>  
+
+
+
+
+
 
             </div>
+        </div>
     </body>
 
 </html>
