@@ -13,15 +13,17 @@
 .intro{
     background-color: #005580;
     height: 100px;
-    margin: 10px
-    
+     
+}
+
+.palavras{
     
 }
 
 .imagem{
-    width: 100px;
-    height: 100px;
-    margin: auto !important;
+    width: 50px;
+    height: 50px;
+    margin: 20px auto !important;
 }
 #aviso{
      margin: 10px;
@@ -48,14 +50,30 @@
 
 }
 
-.index{
-    margin: 10px auto !important;
-    float: none !important;
+.indexImagen{
+margin: 0 auto;
+    
 }
 .quadro {
 
     margin: 20px auto !important;
 
+}
+
+.imgIndex{
+    width: 50px;
+    height: 50px;
+}
+
+.imgIndex:hover{
+    width: 100px;
+    height: 100px;
+    
+}
+
+.indexCirculo{
+    margin: 10px;
+    background-color: #A59A9A;
 }
 
 .preCad{
@@ -205,6 +223,10 @@ input:focus{
     padding: 10px;
     margin: 60px auto !important;
     float: none !important;
+}
+
+body{
+    margin-top: 60px !important;
 }
 
 
