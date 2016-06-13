@@ -52,7 +52,7 @@ public class ExcluirCadastroController extends HttpServlet {
             response.getWriter().write("<h1>"+retorno+"</h1>");
             
         } catch (SQLException e) {
-            response.getWriter().write("Deu ruim!"+e);
+            response.getWriter().write("Erro ao excluir cadastro!"+e);
         }
         
     }

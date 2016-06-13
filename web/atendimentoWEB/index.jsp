@@ -19,18 +19,18 @@
                 <h3>Menu rápido</h3>
 
                 <div class="col-sm-3 indexCirculo">
-                    <a href="cadastro.jsp" class=""><img src="img/cadastro.png" class="img-responsive imgIndex img-rounded indexImagen" alt="Image"></a>
+                    <a href="Cadastro" class=""><img src="img/cadastro.png" class="img-responsive imgIndex img-rounded indexImagen" alt="Image"></a>
                     <p>Cadastrar usuario</p>
                 </div>
                 
                 <div class="col-sm-3 indexCirculo">
-                    <a href="consulta.jsp"><img src="img/consulta.png" class="img-responsive img-rounded indexImagen imgIndex" alt="Image"></a>
+                    <a href="Consulta"><img src="img/consulta.png" class="img-responsive img-rounded indexImagen imgIndex" alt="Image"></a>
                     <p>Acessar cadastro</p>
                 </div>
 
                            
                 <div class="col-sm-3 indexCirculo">
-                    <a href="pre-cadastro.jsp"><img src="img/gerarsenha.png" class="img-responsive img-rounded indexImagen imgIndex" alt="Image"></a>
+                    <a href="GerarSenha"><img src="img/gerarsenha.png" class="img-responsive img-rounded indexImagen imgIndex" alt="Image"></a>
                     <p>Gerar senha</p>
                 </div>
                 
